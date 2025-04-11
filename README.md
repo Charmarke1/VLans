@@ -32,7 +32,7 @@ You're building a VLAN-based network in Cisco Packet Tracer using:
 
 - 9 PCs – Divided into 3 VLANs (3 PCs per VLAN).
 
-![packet tracer environment](
+![packet tracer environment](Capture6.PNG)
 
 🧩 IP Configuration
 
