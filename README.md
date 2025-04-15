@@ -61,7 +61,7 @@ for coloring here is a video link of few second to learn how to do it: https://w
 
 ![subnetting table for three network](Capture3.PNG)
 
-In this image we have three diffrent network address / Default Gateway for each VLan, and three range of usable IP for each network / Default Gateway.
+In this image we have three diffrent network address / Default Gateway for each VLan, and three usable range of IP for each network / Default Gateway.
 
 Since we only have three PC we will only use the first three usable IP of each network 
 
