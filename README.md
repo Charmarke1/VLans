@@ -72,6 +72,17 @@ Now we have to isolate each group / VLan  of PC on 3 diferent network/Default Ga
      - PC0/IP: 192.168.1.1
      - PC1/IP: 192.168.1.2
      - PC2/IP: 192.168.1.3
+
+Click on the PC/0 the this image below should appear in your screen.
+
+![Desktop interface on packet tracer]()
+
+Then CLick on the option that says IP Configuration the image should appear in your screen.
+
+![IP Config interface]()
+
+Next we will configure an static IP To PC/0 by choosing the option Static 
+
       
 - VLAN 20 – Assigned to the next 3 PCs.
   - Default Gateway: 192.168.1.8/29
