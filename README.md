@@ -65,7 +65,7 @@ In this image we have three diffrent network address / Default Gateway for each 
 
 Since we only have three PC we will only use the first three usable IP of each network 
 
-Now we have to isolate each group of PC on 3 diferent network/Default Gateway. 
+Now we have to isolate each group / VLan  of PC on 3 diferent network/Default Gateway. 
 
 - VLAN 10 – Assigned to the first 3 PCs.
      - Default Gateway: 192.168.1.0/29
