@@ -4,7 +4,7 @@
 
 ## Overview:
 
-**A VLAN (Virtual Local Area Network)** is a logical grouping of devices on a network, designed to create separate broadcast domains without requiring separate physical networks.
+**A VLAN (Virtual Local Area Network)** is a logical grouping of devices on a network, each grouping of devices on the same network sharing a switch with more network are VLan  designed to create separate broadcast domains without requiring separate physical networks.
 
 - **Purpose:**
 
