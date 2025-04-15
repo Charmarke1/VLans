@@ -81,7 +81,7 @@ Then CLick on the option that says IP Configuration the image should appear in y
 
 ![IP Config interface]()
 
-Next we will configure an static IP To PC/0 by choosing the option Static 
+Next we will configure an static IP To PC/0 by clicking on the Static option  
 
       
 - VLAN 20 – Assigned to the next 3 PCs.
