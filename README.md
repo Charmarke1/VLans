@@ -29,7 +29,7 @@ click on the link below to download packet tracer. If you do not have a account,
 
 link: https://www.netacad.com/resources/lab-downloads?courseLang=en-US
 
-## Network Hardware
+### Network Hardware
 
 🖧 Devices
 
