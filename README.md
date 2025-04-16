@@ -51,7 +51,7 @@ click and drop all devices nedeed from this section of the packet tracer.
 
 ![section of the packet tracer](Capture2.PNG)
 
-Once you have finish to drop all the devices make sure to regroup all your devices by group of 3 PC as PC/0,PC/1, and PC/2 are in the same area and vise versa. So all group of PC represente different department of a company's network. I just choose paint it in diferrent colors Bleu for VLan 10, Green for VLan 20, and Red for VLan 30. See the image below for referral.  
+Once you have finish to drop all the devices make sure to regroup all your devices by group / VLan of 3 PC as PC/0,PC/1, and PC/2 in the same departement or group / VLan 10 and so on. So all group of PC represente different department of a company's networks. I just choose paint it in diferrent colors to disguste, Bleu for VLan 10, Green for VLan 20, and Red for VLan 30. See the image below for referral.  
 
 for coloring here is a video link of few second to learn how to do it: https://www.youtube.com/shorts/cm1KDcYKnCs
 
@@ -59,51 +59,55 @@ for coloring here is a video link of few second to learn how to do it: https://w
 
 🧩 IP and Interfaces Configuration
 
+In this image below we have three diffrent network address / Default Gateway for each VLan, and three usable range of IP for each network / Default Gateway.
+
 ![subnetting table for three network](Capture3.PNG)
 
-In this image we have three diffrent network address / Default Gateway for each VLan, and three usable range of IP for each network / Default Gateway.
+In this image below is my setup, i placed a note in my packet tracer for not getting lost in the process. if you see, in my notes i also assigned interface for each PC for further configuration, it helps too.
 
-Since we only have three PC we will only use the first three usable IP of each network 
-
-Now we have to isolate each group / VLan  of PC on 3 diferent network/Default Gateway. 
-
-- VLAN 10 – Assigned to the first 3 PCs.
-     - Default Gateway: 192.168.1.0/29
-     - PC0/IP: 192.168.1.1
-     - PC1/IP: 192.168.1.2
-     - PC2/IP: 192.168.1.3
-
-Click on the PC/0 this image below should appear in your screen.
-
-![Desktop interface on packet tracer]()
-
-Then CLick on the option that says IP Configuration this image should appear in your screen.
-
-![IP Config interface]()
-
-Next we will configure an static IP To PC/0 by clicking on the Static option  
-
-      
-- VLAN 20 – Assigned to the next 3 PCs.
-  - Default Gateway: 192.168.1.8/29
-  - PC3/IP: 192.168.1.9
-  - PC4/IP: 192.168.1.10
-  - PC5/IP: 192.168.1.11
-
-- VLAN 30 – Assigned to the last 3 PCs.
-  - Default Gateway: 192.168.1.16/29
-  - PC6/IP: 192.168.1.17
-  - PC7/IP: 192.168.1.18
-  - PC8/IP: 192.168.1.19
-
-I placed notes on my packet tracer interface to not get lost in the process
-    
+link for placing note : https://www.youtube.com/watch?v=80WqvU-xKjc
 
 ![PC'S ROUTER AND SWITCH](https://github.com/Charmarke1/VLans/blob/0be75200dd6b340e5d087cbbe40c5ce952db7e23/Capture%20packet%20tracer.PNG)
 
-Each group is isolated at Layer 2 but will be able to communicate through the router.
+Now that we have set up the environment and we also have three different networks we good to start the IP configuration for each PC.
 
+Since we only have three PC in each grouping / VLan we will only use the first three usable IP of each network address / Default Gateway.
 
+Now we have to isolate each group / VLan  of PC in 3 diferent network / Default Gateway. 
+
+- VLAN 10 – Assigned to the first 3 PCs.
+     - Default Gateway: 192.168.1.0/29
+     - PC0/IP: 192.168.1.1 / PC0 interface : fa0/1
+     - PC1/IP: 192.168.1.2 / PC1 interface : fa0/2
+     - PC2/IP: 192.168.1.3 / PC2 interface : fa0/3
+
+- VLAN 20 – Assigned to the next 3 PCs.
+  - Default Gateway: 192.168.1.8/29
+  - PC3/IP: 192.168.1.9 PC3 / interface : fa0/9
+  - PC4/IP: 192.168.1.10 PC4 / interface : fa0/10
+  - PC5/IP: 192.168.1.11 PC5 / interface : fa0/11
+
+- VLAN 30 – Assigned to the last 3 PCs.
+  - Default Gateway: 192.168.1.16/29
+  - PC6/IP: 192.168.1.17 PC6 / interface : fa0/17
+  - PC7/IP: 192.168.1.18 PC7 / interface : fa0/18
+  - PC8/IP: 192.168.1.19  PC8 / interface : fa0/19
+
+On Packet Tracer click on the PC/0, Then CLick on the option Desktop and choose IP Configuration  this image below should appear in your screen.
+
+![Desktop interface on packet tracer](Capture4.PNG)
+
+Next we will configure an static IP To PC/0 by clicking on the Static option and fill the IPV4 case by the assigned IP  for PC/0 that is PC0/IP : 192.168.1.1 and the Default Gateway case by network address / Default Gateway that is 192.168.1.0, for the Subnet Mask part, one left click will give you the Subnet Mask for this IP, that's it, you assigne an IP for PC/0 and an Default Gateway.
+
+And last thing to do in the IP configuration for PC/0 it's to click on the cross case inside the blue layer that says IP Configuration to save.
+
+![IP Config interface](Captureipcommand2.PNG)
+
+⚠ Each PC need the same configuration.
+
+### 🗂️ VLan Configuration
+
+Now comes the fun part, configuring the VLAN! To do this, we’ll be working directly on the switch using its Command Line Interface (CLI).
 
 ### 🔁 Trunking
 A trunk link is configured between the switch and router (e.g., Switch fa0/1 to Router g0/0).
