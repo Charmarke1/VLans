@@ -105,9 +105,13 @@ And last thing to do in the IP configuration for PC/0 it's to click on the cross
 
 ⚠ Each PC need the same configuration.
 
-### 🗂️ VLan Configuration
+## 🗂️ VLan Configuration
 
 Now comes the fun part, configuring the VLAN! To do this, we’ll be working directly on the switch using its Command Line Interface (CLI).
+
+First step it's to click on the Switch, and choose the option **CLI**. This image below should appear in your screen. 
+
+<img src= "CLI2.PNG" width="600" lenght="400"/>
 
 ### 🔁 Trunking
 A trunk link is configured between the switch and router (e.g., Switch fa0/1 to Router g0/0).
