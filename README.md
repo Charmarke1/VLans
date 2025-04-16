@@ -41,7 +41,7 @@ link: https://www.netacad.com/resources/lab-downloads?courseLang=en-US
 
 - 9 cooper straigh-through for each PC'S. 
 
-## BUILDING THE ENVIRONMENT.
+### BUILDING THE ENVIRONMENT.
 
 After download and create your account you are supose to see the image below.
 
